@@ -1,13 +1,13 @@
 {
     "dialog-state": {
-        "query": "pkgDependencies",
+        "query": "get",
         "path": "",
         "regex": false,
         "caseSensitive": false,
         "wholeWord": false,
         "filePatterns": [],
         "excludeFilePatterns": [],
-        "resultsCount": 2,
+        "resultsCount": 11,
         "errorCount": 0,
         "replaceErrors": "",
         "projectRelative": true
