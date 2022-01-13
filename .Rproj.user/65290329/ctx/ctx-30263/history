@@ -1,0 +1,512 @@
+answers <<- get_answers(input$answers)
+cat("Answers restructured and now sending to DB\n")
+## send to DB and potentially redirect...
+})
+js$getAnswer(id = "test", question_name = "using_duration")
+observeEvent(input$test, {
+cat("Single answer retrieved\n")
+single_answer <<- input$test
+})
+}
+shiny::shinyApp(ui, server)
+library(shiny)
+library(shinyjs)
+library(htmltools)
+rm(list = ls())
+devtools::load_all()
+THEME <-"bootstrap"
+ui <- fluidPage(
+theme = bslib::bs_theme(bootswatch = "darkly"),
+useShinyjs(),
+useSurveyjr(theme = THEME),
+shinyjs::extendShinyjs(script = "js/getAnswer.js", functions = c("getAnswer"))
+survey_output("container")
+)
+ui <- fluidPage(
+theme = bslib::bs_theme(bootswatch = "darkly"),
+useShinyjs(),
+useSurveyjr(theme = THEME),
+shinyjs::extendShinyjs(script = "js/getAnswer.js", functions = c("getAnswer")),
+survey_output("container")
+)
+server <- function(input, output, session) {
+render_survey(id_container = "container",
+id_answers = "answers",
+survey_json = SURVEY)
+observeEvent(input$answers, {
+cat("Answers retrieved\n")
+answers <<- get_answers(input$answers)
+cat("Answers restructured and now sending to DB\n")
+## send to DB and potentially redirect...
+})
+js$getAnswer(id = "test", question_name = "using_duration")
+observeEvent(input$test, {
+cat("Single answer retrieved\n")
+single_answer <<- input$test
+})
+}
+shiny::shinyApp(ui, server)
+rm(list = ls())
+devtools::load_all()
+THEME <-"bootstrap"
+ui <- fluidPage(
+theme = bslib::bs_theme(bootswatch = "darkly"),
+useShinyjs(),
+useSurveyjr(theme = THEME),
+survey_output("container")
+)
+server <- function(input, output, session) {
+render_survey(id_container = "container",
+id_answers = "answers",
+survey_json = SURVEY)
+observeEvent(input$answers, {
+cat("Answers retrieved\n")
+answers <<- get_answers(input$answers)
+cat("Answers restructured and now sending to DB\n")
+## send to DB and potentially redirect...
+})
+shinyjs::js$getAnswer(id = "test", question_name = "using_duration")
+observeEvent(input$test, {
+cat("Single answer retrieved\n")
+single_answer <<- input$test
+})
+}
+shiny::shinyApp(ui, server)
+library(shiny)
+library(shinyjs)
+library(htmltools)
+rm(list = ls())
+devtools::load_all()
+THEME <-"bootstrap"
+ui <- fluidPage(
+theme = bslib::bs_theme(bootswatch = "darkly"),
+useShinyjs(),
+useSurveyjr(theme = THEME),
+survey_output("container")
+)
+server <- function(input, output, session) {
+render_survey(id_container = "container",
+id_answers = "answers",
+survey_json = SURVEY)
+observeEvent(input$answers, {
+cat("Answers retrieved\n")
+answers <<- get_answers(input$answers)
+cat("Answers restructured and now sending to DB\n")
+## send to DB and potentially redirect...
+})
+shinyjs::js$getAnswer(id = "test", question_name = "using_duration")
+observeEvent(input$test, {
+cat("Single answer retrieved\n")
+single_answer <<- input$test
+})
+}
+shiny::shinyApp(ui, server)
+library(shiny)
+library(shinyjs)
+library(htmltools)
+rm(list = ls())
+devtools::load_all()
+THEME <-"bootstrap"
+ui <- fluidPage(
+theme = bslib::bs_theme(bootswatch = "darkly"),
+useShinyjs(),
+useSurveyjr(theme = THEME),
+survey_output("container")
+)
+server <- function(input, output, session) {
+render_survey(id_container = "container",
+id_answers = "answers",
+survey_json = SURVEY)
+observeEvent(input$answers, {
+cat("Answers retrieved\n")
+answers <<- get_answers(input$answers)
+cat("Answers restructured and now sending to DB\n")
+## send to DB and potentially redirect...
+})
+shinyjs::js$getAnswer(id = "test", question_name = "using_duration")
+observeEvent(input$test, {
+cat("Single answer retrieved\n")
+single_answer <<- input$test
+})
+}
+shiny::shinyApp(ui, server)
+library(shiny)
+library(shinyjs)
+library(htmltools)
+rm(list = ls())
+devtools::load_all()
+THEME <-"bootstrap"
+ui <- fluidPage(
+theme = bslib::bs_theme(bootswatch = "darkly"),
+useShinyjs(),
+useSurveyjr(theme = THEME),
+survey_output("container")
+)
+server <- function(input, output, session) {
+render_survey(id_container = "container",
+id_answers = "answers",
+survey_json = SURVEY)
+observeEvent(input$answers, {
+cat("Answers retrieved\n")
+answers <<- get_answers(input$answers)
+cat("Answers restructured and now sending to DB\n")
+## send to DB and potentially redirect...
+})
+shinyjs::js$getAnswer(id = "test", question_name = "using_duration")
+observeEvent(input$test, {
+cat("Single answer retrieved\n")
+single_answer <<- input$test
+})
+}
+shiny::shinyApp(ui, server)
+library(shiny)
+library(shinyjs)
+library(htmltools)
+rm(list = ls())
+devtools::load_all()
+THEME <-"bootstrap"
+ui <- fluidPage(
+theme = bslib::bs_theme(bootswatch = "darkly"),
+useShinyjs(),
+useSurveyjr(theme = THEME),
+survey_output("container")
+)
+server <- function(input, output, session) {
+render_survey(id_container = "container",
+id_answers = "answers",
+survey_json = SURVEY)
+observeEvent(input$answers, {
+cat("Answers retrieved\n")
+answers <<- get_answers(input$answers)
+cat("Answers restructured and now sending to DB\n")
+## send to DB and potentially redirect...
+})
+shinyjs::js$getAnswer(id = "test", question_name = "using_duration")
+observeEvent(input$test, {
+cat("Single answer retrieved\n")
+single_answer <<- input$test
+})
+}
+shiny::shinyApp(ui, server)
+library(shiny)
+library(shinyjs)
+library(htmltools)
+rm(list = ls())
+devtools::load_all()
+THEME <-"bootstrap"
+ui <- fluidPage(
+theme = bslib::bs_theme(bootswatch = "darkly"),
+useShinyjs(),
+useSurveyjr(theme = THEME),
+survey_output("container")
+)
+library(shiny)
+library(shinyjs)
+library(htmltools)
+rm(list = ls())
+devtools::load_all()
+THEME <-"bootstrap"
+ui <- fluidPage(
+theme = bslib::bs_theme(bootswatch = "darkly"),
+useShinyjs(),
+useSurveyjr(theme = THEME),
+survey_output("container")
+)
+server <- function(input, output, session) {
+render_survey(id_container = "container",
+id_answers = "answers",
+survey_json = SURVEY)
+observeEvent(input$answers, {
+cat("Answers retrieved\n")
+answers <<- get_answers(input$answers)
+cat("Answers restructured and now sending to DB\n")
+## send to DB and potentially redirect...
+})
+shinyjs::js$getAnswer(id = "test", survey = input$.survey, question_name = "using_duration")
+observeEvent(input$test, {
+cat("Single answer retrieved\n")
+single_answer <<- input$test
+})
+}
+shiny::shinyApp(ui, server)
+library(shiny)
+library(shinyjs)
+library(htmltools)
+rm(list = ls())
+devtools::load_all()
+THEME <-"bootstrap"
+ui <- fluidPage(
+theme = bslib::bs_theme(bootswatch = "darkly"),
+useShinyjs(),
+useSurveyjr(theme = THEME),
+survey_output("container")
+)
+server <- function(input, output, session) {
+render_survey(id_container = "container",
+id_answers = "answers",
+survey_json = SURVEY)
+observeEvent(input$answers, {
+cat("Answers retrieved\n")
+answers <<- get_answers(input$answers)
+cat("Answers restructured and now sending to DB\n")
+## send to DB and potentially redirect...
+})
+shinyjs::js$getAnswer(id = "test", survey = reactive(input$.survey), question_name = "using_duration")
+observeEvent(input$test, {
+cat("Single answer retrieved\n")
+single_answer <<- input$test
+})
+}
+shiny::shinyApp(ui, server)
+library(shiny)
+library(shinyjs)
+library(htmltools)
+rm(list = ls())
+devtools::load_all()
+THEME <-"bootstrap"
+ui <- fluidPage(
+theme = bslib::bs_theme(bootswatch = "darkly"),
+useShinyjs(),
+useSurveyjr(theme = THEME),
+survey_output("container")
+)
+server <- function(input, output, session) {
+render_survey(id_container = "container",
+id_answers = "answers",
+survey_json = SURVEY)
+observeEvent(input$answers, {
+cat("Answers retrieved\n")
+answers <<- get_answers(input$answers)
+cat("Answers restructured and now sending to DB\n")
+## send to DB and potentially redirect...
+})
+survey <- reactive(input$.survey)
+shinyjs::js$getAnswer(id = "test", survey = survey(), question_name = "using_duration")
+observeEvent(input$test, {
+cat("Single answer retrieved\n")
+single_answer <<- input$test
+})
+}
+shiny::shinyApp(ui, server)
+# https://shiny.rstudio.com/articles/communicating-with-js.html
+library(shiny)
+library(shinyjs)
+library(htmltools)
+rm(list = ls())
+devtools::load_all()
+## TODO: pack into module...
+## TODO: translation testing...
+THEME <-"bootstrap"
+## import survey here
+ui <- fluidPage(
+theme = bslib::bs_theme(bootswatch = "darkly"),
+useShinyjs(),
+useSurveyjr(theme = THEME),
+survey_output("container")
+)
+server <- function(input, output, session) {
+render_survey(id_container = "container",
+id_answers = "answers",
+survey_json = SURVEY)
+observeEvent(input$answers, {
+cat("Answers retrieved\n")
+answers <<- get_answers(input$answers)
+cat("Answers restructured and now sending to DB\n")
+## send to DB and potentially redirect...
+})
+shinyjs::js$getAnswer(id = "test", question_name = "using_duration")
+observeEvent(input$test, {
+cat("Single answer retrieved\n")
+single_answer <<- input$test
+})
+}
+shiny::shinyApp(ui, server)
+# create_env <- function() {
+#   e <- new.env(parent = globalenv())
+#   assign("e", e, envir = globalenv())
+#   assign("a", 1, envir = e)
+#   return("blobb")
+# }
+#
+# create_env()
+#
+# rm(list = ls())
+#
+# ce <- function() {
+#   e <- new.env(parent = globalenv())
+#   attach(e)
+#   assign("a", 1, as.environment("e"))
+#   return(e$a)
+# }
+# ce()
+# search()
+# ls(envir = as.environment("e"))
+# get("a", envir = as.environment("e"))
+# detach("e")
+# search()
+#
+# ls(envir = as.environment(".GlobalEnv"))
+answers
+library(shiny)
+library(shinyjs)
+library(htmltools)
+rm(list = ls())
+devtools::load_all()
+THEME <-"bootstrap"
+ui <- fluidPage(
+theme = bslib::bs_theme(bootswatch = "darkly"),
+useShinyjs(),
+useSurveyjr(theme = THEME),
+survey_output("container")
+)
+server <- function(input, output, session) {
+render_survey(id_container = "container",
+id_answers = "answers",
+survey_json = SURVEY)
+observeEvent(input$answers, {
+cat("Answers retrieved\n")
+answers <<- get_answers(input$answers)
+cat("Answers restructured and now sending to DB\n")
+## send to DB and potentially redirect...
+})
+shinyjs::js$getAnswer(id = "test", question_name = "using_duration")
+observeEvent(input$test, {
+cat("Single answer retrieved\n")
+single_answer <<- input$test
+})
+}
+shiny::shinyApp(ui, server)
+answers
+library(shiny)
+library(shinyjs)
+library(htmltools)
+rm(list = ls())
+devtools::load_all()
+THEME <-"bootstrap"
+ui <- fluidPage(
+theme = bslib::bs_theme(bootswatch = "darkly"),
+useShinyjs(),
+useSurveyjr(theme = THEME),
+survey_output("container")
+)
+server <- function(input, output, session) {
+render_survey(id_container = "container",
+id_answers = "answers",
+survey_json = SURVEY)
+observeEvent(input$answers, {
+cat("Answers retrieved\n")
+answers <<- get_answers(input$answers)
+cat("Answers restructured and now sending to DB\n")
+## send to DB and potentially redirect...
+})
+shinyjs::js$getAnswer(id = "test", question_name = "using_duration")
+observeEvent(input$test, {
+cat("Single answer retrieved\n")
+single_answer <<- input$test
+})
+}
+shiny::shinyApp(ui, server)
+library(shiny)
+library(shinyjs)
+library(htmltools)
+rm(list = ls())
+devtools::load_all()
+THEME <-"bootstrap"
+ui <- fluidPage(
+theme = bslib::bs_theme(bootswatch = "darkly"),
+useShinyjs(),
+useSurveyjr(theme = THEME),
+survey_output("container")
+)
+server <- function(input, output, session) {
+render_survey(id_container = "container",
+id_answers = "answers",
+survey_json = SURVEY)
+observeEvent(input$answers, {
+cat("Answers retrieved\n")
+answers <<- get_answers(input$answers)
+cat("Answers restructured and now sending to DB\n")
+## send to DB and potentially redirect...
+})
+shinyjs::js$getAnswer(id = "test", question_name = "using_duration")
+observeEvent(input$test, {
+cat("Single answer retrieved\n")
+single_answer <<- input$test
+})
+}
+shiny::shinyApp(ui, server)
+library(shiny)
+library(shinyjs)
+library(htmltools)
+rm(list = ls())
+devtools::load_all()
+THEME <-"bootstrap"
+ui <- fluidPage(
+theme = bslib::bs_theme(bootswatch = "darkly"),
+useShinyjs(),
+useSurveyjr(theme = THEME),
+survey_output("container")
+)
+server <- function(input, output, session) {
+render_survey(id_container = "container",
+id_answers = "answers",
+survey_json = SURVEY)
+observeEvent(input$answers, {
+cat("Answers retrieved\n")
+answers <<- get_answers(input$answers)
+cat("Answers restructured and now sending to DB\n")
+## send to DB and potentially redirect...
+})
+shinyjs::js$getAnswer(id = "test", question_name = "using_duration")
+observeEvent(input$test, {
+cat("Single answer retrieved\n")
+single_answer <<- input$test
+})
+}
+shiny::shinyApp(ui, server)
+answers
+library(shiny)
+library(shinyjs)
+library(htmltools)
+rm(list = ls())
+devtools::load_all()
+THEME <-"bootstrap"
+ui <- fluidPage(
+theme = bslib::bs_theme(bootswatch = "darkly"),
+useShinyjs(),
+useSurveyjr(theme = THEME),
+tags$script("var survey;"),
+survey_output("container")
+)
+server <- function(input, output, session) {
+render_survey(id_container = "container",
+id_answers = "answers",
+survey_json = SURVEY)
+observeEvent(input$answers, {
+cat("Answers retrieved\n")
+answers <<- get_answers(input$answers)
+cat("Answers restructured and now sending to DB\n")
+## send to DB and potentially redirect...
+})
+shinyjs::js$getAnswer(id = "test", question_name = "using_duration")
+observeEvent(input$test, {
+cat("Single answer retrieved\n")
+single_answer <<- input$test
+})
+}
+shiny::shinyApp(ui, server)
+library(shiny)
+library(shinyjs)
+library(htmltools)
+rm(list = ls())
+devtools::load_all()
+THEME <-"bootstrap"
+ui <- fluidPage(
+theme = bslib::bs_theme(bootswatch = "darkly"),
+useShinyjs(),
+useSurveyjr(theme = THEME),
+tags$script(HTML("var survey;")),
+survey_output("container")
+)
+rm(list = ls())
+devtools::load_all()

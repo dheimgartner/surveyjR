@@ -1,0 +1,81 @@
+# https://shiny.rstudio.com/articles/communicating-with-js.html
+
+library(shiny)
+library(shinyjs)
+library(htmltools)
+
+rm(list = ls())
+
+devtools::load_all()
+
+
+## TODO: translation testing...
+
+
+THEME <-"bootstrap"
+EXAMPLE <- SURVEY$patient
+
+## import survey here
+
+
+ui <- fluidPage(
+  theme = bslib::bs_theme(bootswatch = "darkly"),
+  useShinyjs(),
+  useSurveyjr(theme = THEME),
+  
+  survey_output("container")
+
+)
+
+
+
+server <- function(input, output, session) {
+  
+  render_survey(id_container = "container",
+                id_answers = "answers",
+                survey_json = EXAMPLE)
+  
+  observeEvent(input$answers, {
+    answers_list <<- get_answers(input$answers)
+    cat("Answers retrieved\n")
+    ## careful -> duplicates entries!!
+    answers_df <<- as.data.frame(answers)
+    cat("Answers restructured and now sending to DB\n")
+    ## send to DB and potentially redirect...
+  })
+  
+}
+
+
+
+shiny::shinyApp(ui, server)
+
+
+
+
+
+# create_env <- function() {
+#   e <- new.env(parent = globalenv())
+#   assign("e", e, envir = globalenv())
+#   assign("a", 1, envir = e)
+#   return("blobb")
+# }
+# 
+# create_env()
+# 
+# rm(list = ls())
+# 
+# ce <- function() {
+#   e <- new.env(parent = globalenv())
+#   attach(e)
+#   assign("a", 1, as.environment("e"))
+#   return(e$a)
+# }
+# ce()
+# search()
+# ls(envir = as.environment("e"))
+# get("a", envir = as.environment("e"))
+# detach("e")
+# search()
+# 
+# ls(envir = as.environment(".GlobalEnv"))
