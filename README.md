@@ -3,6 +3,7 @@
 
 <!-- badges: start -->
 [![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
+[![CRAN status](https://www.r-pkg.org/badges/version/surveyjR)](https://CRAN.R-project.org/package=surveyjR)
 <!-- badges: end -->
 
 The goal of surveyjR is to bring the power of SurveyJS to R Shiny. In particular its various input forms and the survey flow handling without the need to go through the hustle of creating dynamic UIs, new input bindings, etc.
