@@ -34,3 +34,4 @@ Things are not really testable as the main funcionality simply wraps around the 
 
 Things that need to done:
 - Write js function for getting particular value (by questionName) on the fly. This should be relatively easy. However, the `survey` object is initialized within the `renderSurvey()` js function and thus currently has no global scope. -> survey.getValue("questionName") and then `Shiny.setInputValue()` would be the idea...
+- Redirection after submit (f.ex. in `observeEvent()` where we collect the answers) -> either Shiny side or potentially adjust/extend `renderSurvey()`.
