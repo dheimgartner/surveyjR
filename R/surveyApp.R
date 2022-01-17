@@ -14,8 +14,9 @@ surveyApp <- function(bootswatch = "sandstone", survey = c("cancellation", "mark
   
   if (is.null(survey_imported)) {
     survey <- match.arg(survey, several.ok = FALSE)
-    ## import survey.json with surveyjR::import_survey()
+    survey <- SURVEY[[survey]]
   } else {
+    ## import survey.json with surveyjR::import_survey()
     survey <- survey_imported
   }
   
@@ -36,7 +37,7 @@ surveyApp <- function(bootswatch = "sandstone", survey = c("cancellation", "mark
     ## id_answers will write the answers to input$id_answers
     render_survey(id_container = "container",
                   id_answers = "answers",
-                  survey_json = SURVEY[[survey]])
+                  survey_json = survey)
     
     shiny::observeEvent(input$answers, {
       ## pass input$id_answers to get_answers
