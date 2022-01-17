@@ -2,6 +2,7 @@
 #'
 #' @param bootswatch character; one of bslib::bootswatch_themes().
 #' @param survey one of names(surveyjR::SURVEY).
+#' @param survey_imported allows you to test a survey created by you.
 #'
 #' @return
 #' @export
@@ -9,10 +10,14 @@
 #' if (interactive()) {
 #'     surveyApp("sandstone", "patient")
 #' }
-surveyApp <- function(bootswatch = "sandstone", survey = c("cancellation", "market_fit", "patient")) {
+surveyApp <- function(bootswatch = "sandstone", survey = c("cancellation", "market_fit", "patient"), survey_imported = NULL) {
   
-  survey <- match.arg(survey, several.ok = FALSE)
-  ## import survey.json with surveyjR::import_survey()
+  if (is.null(survey_imported)) {
+    survey <- match.arg(survey, several.ok = FALSE)
+    ## import survey.json with surveyjR::import_survey()
+  } else {
+    survey <- survey_imported
+  }
   
   ui <- shiny::fluidPage(
     ## surveyjR works nicely together with bootswatch themes
