@@ -14,7 +14,7 @@ registerDependencies <- function(version, theme) {
     stop("Register shinyjs::useShinyjs() in your UI")
   }
   
-  shiny::addResourcePath("js", system.file("js", package = "surveyjR"))
+  shiny::addResourcePath("surveyjR_js", system.file("js", package = "surveyjR"))
   
   src <- paste0("https://unpkg.com/survey-jquery", "@", version, "/")
   script <- "survey.jquery.min.js"

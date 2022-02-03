@@ -8,7 +8,7 @@
 #'
 #' @return
 #' @export
-render_survey <- function(id_container, id_answers, survey_json) {
+render_survey <- function(id, id_answers, survey_json) {
   
   theme <- get("theme", envir = as.environment(".surveyjR"))
   

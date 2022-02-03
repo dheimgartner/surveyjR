@@ -9,5 +9,5 @@ registerJs <- function() {
     stop("Register shinyjs::useShinyjs() in your UI")
   }
   
-  shinyjs::extendShinyjs(script = "js/renderSurvey.js", functions = c("renderSurvey"))
+  shinyjs::extendShinyjs(script = "surveyjR_js/renderSurvey.js", functions = c("renderSurvey"))
 }
