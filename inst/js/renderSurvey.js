@@ -2,7 +2,7 @@
 
 shinyjs.renderSurvey = function(params) {
   var defaultParams = {
-    id_container : "surveyContainer",
+    id : "surveyContainer",
     id_answers : "answers",
     survey_json: null,
     theme : "default"
@@ -17,7 +17,7 @@ shinyjs.renderSurvey = function(params) {
     Shiny.setInputValue(params.id_answers, JSON.stringify(survey.data));
   }
   
-  var id = $("#" + params.id_container);
+  var id = $("#" + params.id);
   var survey = new Survey.Model(surveyJSON);
   id.Survey({
     model: survey,

@@ -12,7 +12,7 @@ render_survey <- function(id, id_answers, survey_json) {
   
   theme <- get("theme", envir = as.environment(".surveyjR"))
   
-  shinyjs::js$renderSurvey(id_container = id_container, 
+  shinyjs::js$renderSurvey(id = id, 
                            id_answers = id_answers, 
                            survey_json = survey_json, 
                            theme = theme)
