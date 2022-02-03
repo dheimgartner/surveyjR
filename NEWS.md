@@ -1,6 +1,7 @@
 # surveyjR (development version)
 
-* Fixed package dependencies (resource path) and container_id -> id
+* Fixed package dependencies (resource path) and id_container -> id
+* id_container downstream fixes
 
 # surveyjR 0.0.0.9000
 
