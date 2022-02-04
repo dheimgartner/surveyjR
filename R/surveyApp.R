@@ -35,7 +35,7 @@ surveyApp <- function(bootswatch = "sandstone", survey = c("cancellation", "mark
   
   server <- function(input, output, session) {
     ## id_answers will write the answers to input$id_answers
-    render_survey(id_container = "container",
+    render_survey(id = "container",
                   id_answers = "answers",
                   survey_json = survey)
     
